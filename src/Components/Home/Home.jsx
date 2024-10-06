@@ -10,13 +10,13 @@ import ConsultationButton from '../Navbar/ConsultationButton';
 
 const Home = () => {
     return (
-        <div className=''>
+        <div className='pt-16'>
             <CarouselDefault className="hidden md:block " />
             <CarouselMobile className="" />
             <div className=' lg:hidden bg-gray-300 text-center mx-4 rounded-md p-4 my-4 flex items-center justify-center'>
-                    <ConsultationButton />
+                <ConsultationButton />
             </div>
-            <div className='bg-black text-white rounded-md flex  items-center justify-around mx-4 py-5'>
+            <div className='bg-black text-white rounded-md flex  items-center justify-around mx-4 py-9 md:py-5'>
                 <a href="">
                     <div className='flex flex-col items-center'>
                         <img src={excellenticon} className='w-12 sm:w-20' alt="Excelent" />

@@ -87,7 +87,7 @@ export function CarouselMobile() {
             alt={`slide ${index + 1}`}
             className="h-full w-full object-cover object-center relative"
           />
-          <div className="absolute bg-black/50 w-full h-full top-0 text-white flex flex-col items-center justify-center gap-y-5">
+          <div className="absolute bg-black/60 w-full h-full top-0 text-white flex flex-col items-center justify-center gap-y-5">
             <h1 className="uppercase font-bold text-[16px] sm:text-[18px] text-center text-yellow-600 " data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-anchor-placement="top-center" data-aos-delay="300">
               {slide.title}
             </h1>

@@ -107,7 +107,7 @@ function NavListMenu() {
                 <MenuHandler>
                     <Typography as="div" variant="small" className="font-medium">
                         <ListItem
-                            className="flex items-center gap-2 py-2 pr-4 font-semibold text-gray-900  focus:text-deep-orange-500"
+                            className="flex items-center gap-2 py-2 pr-4 font-semibold text-gray-900  focus:text-yellow-800"
                             selected={isMenuOpen || isMobileMenuOpen}
                             onClick={() => setIsMobileMenuOpen((cur) => !cur)}
                         >
@@ -138,9 +138,9 @@ function NavListMenu() {
     );
 }
 
-function NavList() {
+function NavList({setOpenNav}) {
     return (
-        <List id="Yellow" className=" mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
+        <List className=" mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
             <Typography
                 as="a"
                 href="#"
@@ -148,18 +148,31 @@ function NavList() {
                 color="blue-gray"
                 className="font-semibold"
             >
-                <ListItem className="flex items-center gap-2 py-2 pr-4  focus:text-deep-orange-500 ">HOME</ListItem>
+                <ListItem className="flex items-center gap-2 py-2 pr-4  focus:text-yellow-800 " onClick={() => setOpenNav(false)} >HOME</ListItem>
             </Typography>
             <NavListMenu />
             <Typography
                 as="a"
+                href=""
+                variant="small"
+                color="blue-gray"
+                className="font-semibold"
+            >
+                <a href="#About">
+                    <ListItem className="flex items-center gap-2 py-2 pr-4 focus:text-yellow-800 active:text-yellow-800 " onClick={() => setOpenNav(false)}>
+                        ABOUT
+                    </ListItem>
+                </a>
+            </Typography>
+            <Typography
+                as="a"
                 href="#"
                 variant="small"
                 color="blue-gray"
                 className="font-semibold"
             >
-                <ListItem className="flex items-center gap-2 py-2 pr-4 focus:text-deep-orange-500 ">
-                    ABOUT
+                <ListItem className="flex items-center gap-2 py-2 pr-4 focus:text-yellow-800 uppercase" onClick={() => setOpenNav(false)}>
+                    works
                 </ListItem>
             </Typography>
             <Typography
@@ -169,18 +182,7 @@ function NavList() {
                 color="blue-gray"
                 className="font-semibold"
             >
-                <ListItem className="flex items-center gap-2 py-2 pr-4 focus:text-deep-orange-500 uppercase">
-                works
-                </ListItem>
-            </Typography>
-            <Typography
-                as="a"
-                href="#"
-                variant="small"
-                color="blue-gray"
-                className="font-semibold"
-            >
-                <ListItem className="flex items-center gap-2 py-2 pr-4 focus:text-deep-orange-500 uppercase">
+                <ListItem className="flex items-center gap-2 py-2 pr-4 focus:text-yellow-800 uppercase" onClick={() => setOpenNav(false)}>
                     Contact
                 </ListItem>
             </Typography>
@@ -199,19 +201,19 @@ export function NavbarIndex() {
     }, []);
 
     return (
-        <Navbar className=" mx-auto max-w-full px-4 py-2">
+        <Navbar className="fixed top-0 z-50  mx-auto max-w-full px-4 py-2">
             <div className="flex items-center justify-between text-blue-gray-900">
                 <img src={AADHI3} className="w-12 h-12 rounded-full" alt="AADHI Engineering Works" />
                 <Typography
                     as="a"
                     href="#"
                     variant="h6"
-                    className="mr-4 cursor-pointer py-1.5 lg:ml-2"
+                    className="mr-4 cursor-pointer py-1.5 lg:ml-2 xl:text-2xl uppercase font-bold"
                 >
                     AADHI Engineering Works
                 </Typography>
                 <div className="hidden lg:block">
-                    <NavList />
+                    <NavList setOpenNav={setOpenNav} />
                 </div>
                 <div className="hidden gap-2 lg:flex">
                     <button>
@@ -232,7 +234,7 @@ export function NavbarIndex() {
                 </IconButton>
             </div>
             <Collapse open={openNav}>
-                <NavList />
+                <NavList setOpenNav={setOpenNav} />
                 <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
                     <button>
                         <ConsultationButton />

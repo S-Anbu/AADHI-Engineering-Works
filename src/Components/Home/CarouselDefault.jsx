@@ -1,11 +1,11 @@
 import { Carousel } from "@material-tailwind/react";
 import slider1 from '../../assets/largeImage.webp';
-import slider3 from '../../assets/slider3.webp';
 import slider2 from '../../assets/slider3.jpeg';
+import slider3 from '../../assets/slider3.webp';
+import slider4 from '../../assets/sliderset2.jpg';
 import slider5 from '../../assets/sliderset1.jpg';
 import slider6 from '../../assets/sliderset4.jpg';
 import slider7 from '../../assets/sliderset5.jpg';
-import slider4 from '../../assets/sliderset2.jpg';
 
 export function CarouselDefault() {
   const slides=[
@@ -87,9 +87,9 @@ export function CarouselDefault() {
             alt={`slide ${index + 1}`}
             className="h-full w-full object-cover relative"
           />
-          <div className="absolute bg-black/50 w-full h-full top-0 text-white flex flex-col items-center justify-center gap-y-8">
+          <div className="absolute bg-black/60 w-full h-full top-0 text-white flex flex-col items-center justify-center gap-y-8">
             <h1 className="uppercase text-[20px] text-yellow-600 font-bold">{slide.title}</h1>
-            <div className="text-center">
+            <div className="text-center flex flex-col gap-2">
             <p className="text-3xl sm:text-5xl font-bold">{slide.subtitle1}</p>
             <p className="text-3xl sm:text-5xl font-bold">{slide.subtitle2}</p>
             </div>

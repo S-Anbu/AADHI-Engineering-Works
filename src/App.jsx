@@ -1,4 +1,5 @@
 import './App.css'
+import About from './Components/About/About'
 import Home from './Components/Home/Home'
 import { NavbarIndex } from './Components/Navbar/Navbar'
 
@@ -6,10 +7,11 @@ function App() {
 
   return (
     <>
-    <div className='sticky top-0 z-50'>
+    <div>
       <NavbarIndex/>
     </div>
     <Home/>
+    <About/>
 
     </>
   )
