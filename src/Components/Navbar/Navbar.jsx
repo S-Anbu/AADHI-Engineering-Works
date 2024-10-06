@@ -1,4 +1,5 @@
 import React from "react";
+import AADHI3 from "../../assets/AADHI3.png"
 import {
     Navbar,
     Collapse,
@@ -147,7 +148,7 @@ function NavList() {
                 color="blue-gray"
                 className="font-semibold"
             >
-                <ListItem className="flex items-center gap-2 py-2 pr-4  focus:text-deep-orange-500 ">Home</ListItem>
+                <ListItem className="flex items-center gap-2 py-2 pr-4  focus:text-deep-orange-500 ">HOME</ListItem>
             </Typography>
             <NavListMenu />
             <Typography
@@ -158,7 +159,7 @@ function NavList() {
                 className="font-semibold"
             >
                 <ListItem className="flex items-center gap-2 py-2 pr-4 focus:text-deep-orange-500 ">
-                    About Us
+                    ABOUT
                 </ListItem>
             </Typography>
             <Typography
@@ -168,8 +169,8 @@ function NavList() {
                 color="blue-gray"
                 className="font-semibold"
             >
-                <ListItem className="flex items-center gap-2 py-2 pr-4 focus:text-deep-orange-500">
-                    Our Services
+                <ListItem className="flex items-center gap-2 py-2 pr-4 focus:text-deep-orange-500 uppercase">
+                works
                 </ListItem>
             </Typography>
             <Typography
@@ -179,8 +180,8 @@ function NavList() {
                 color="blue-gray"
                 className="font-semibold"
             >
-                <ListItem className="flex items-center gap-2 py-2 pr-4 focus:text-deep-orange-500">
-                    Contact Us
+                <ListItem className="flex items-center gap-2 py-2 pr-4 focus:text-deep-orange-500 uppercase">
+                    Contact
                 </ListItem>
             </Typography>
         </List>
@@ -200,6 +201,7 @@ export function NavbarIndex() {
     return (
         <Navbar className=" mx-auto max-w-full px-4 py-2">
             <div className="flex items-center justify-between text-blue-gray-900">
+                <img src={AADHI3} className="w-12 h-12 rounded-full" alt="AADHI Engineering Works" />
                 <Typography
                     as="a"
                     href="#"
@@ -232,12 +234,9 @@ export function NavbarIndex() {
             <Collapse open={openNav}>
                 <NavList />
                 <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-                    <Button variant="outlined" size="sm" color="blue-gray" fullWidth>
-                        Log In
-                    </Button>
-                    <Button variant="gradient" size="sm" fullWidth>
-                        Sign In
-                    </Button>
+                    <button>
+                        <ConsultationButton />
+                    </button>
                 </div>
             </Collapse>
         </Navbar>
