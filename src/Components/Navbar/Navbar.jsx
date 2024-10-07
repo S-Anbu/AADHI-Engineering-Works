@@ -182,9 +182,11 @@ function NavList({setOpenNav}) {
                 color="blue-gray"
                 className="font-semibold"
             >
+                <a href="#Contacts">
                 <ListItem className="flex items-center gap-2 py-2 pr-4 focus:text-yellow-800 uppercase" onClick={() => setOpenNav(false)}>
                     Contact
                 </ListItem>
+                </a>
             </Typography>
         </List>
     );
