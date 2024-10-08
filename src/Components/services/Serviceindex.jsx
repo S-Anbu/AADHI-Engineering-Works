@@ -29,7 +29,8 @@ const Serviceindex = () => {
     <div className="bg-black text-white py-12 px-6 mx-4 my-4 rounded">
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold">
-          Play It Safe & Choose Mister Sparky®
+          Play It Safe & Choose
+          <span className='text-[#fce200]'> AADHI</span>®
         </h1>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

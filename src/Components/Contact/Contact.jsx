@@ -1,14 +1,3 @@
-// import React from 'react';
-// import emailjs from '@emailjs/browser';
-// import { useRef } from 'react';
-// import { MdEmail, MdPhone, MdLocationOn } from 'react-icons/md';
-// import email from "../../assets/Contact/email.svg";
-// import address from "../../assets/Contact/address.svg";
-// import phone from "../../assets/Contact/smartphone.svg";
-// import location from "../../assets/Contact/location.svg";
-
-
-
 import React from 'react';
 import { Element } from 'react-scroll';
 import emailjs from '@emailjs/browser';
@@ -39,16 +28,12 @@ const Contact = () => {
         <>
             <Element className='' id='Contacts' name='Contact'>
                 <div className="flex justify-center my-5 lg:py-8">
-                    <div className="flex  items-center">
-                        <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-                        <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-                            Contact
-                        </span>
-                        <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+                    <div className='flex flex-col items-center space-y-3 pt-20 lg:pt-12 px-2 text-center'>
+                        <h1 className='text-3xl font-bold'>We are here to assist you</h1>
+                        <p>Feel free to contact us or just drop us a line here. Our support staff will reach you very soon</p>
                     </div>
                 </div>
-                <div className=" flex flex-col lg:flex-row items-center justify-center gap-10">
-
+                <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
                     <form
                         ref={form} onSubmit={sendEmail}
                         data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
@@ -73,7 +58,6 @@ const Contact = () => {
                                     name="last_Name"
                                     className="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900"
                                     placeholder="Last Name"
-
                                 />
                             </div>
                         </div>
@@ -107,27 +91,38 @@ const Contact = () => {
                             </button>
                         </div>
                     </form>
-                    <div className=" text-xl sm:text-2xl p-6 rounded-lg w-fit " data-aos="fade-down"  data-aos-delay="50" data-aos-duration="2000">
+                    <div className="text-xl sm:text-2xl p-6 rounded-lg w-fit" data-aos="fade-down" data-aos-delay="50" data-aos-duration="2000">
                         <div className="flex items-center mb-4">
                             <MdEmail className="mr-3 text-2xl" /> {/* Email Icon */}
-                            <span className=' text-sm md:text-2xl font-semibold'>aadhiengineeringworks2021@gmail.com</span>
+                            <span className='text-sm md:text-2xl font-semibold'>aadhiengineeringworks2021@gmail.com</span>
                         </div>
                         <div className="flex items-center mb-4">
                             <MdPhone className="mr-3 text-2xl" /> {/* Phone Icon */}
-                            <span className='font-semibold text-sm md:text-2xl'>  +91 9865219547</span>
-                            <span className='font-semibold text-sm md:text-2xl'>  / +91 7397089417</span>
+                            <span className='font-semibold text-sm md:text-2xl'> +91 9865219547</span>
+                            <span className='font-semibold text-sm md:text-2xl'> / +91 7397089417</span>
                         </div>
-                        <div className="flex items-center">
+                        <div className="flex items-start">
                             <MdLocationOn className="mr-3 text-2xl" /> {/* Location Icon */}
                             <div className='font-semibold text-sm md:text-2xl'>
                                 <p>NO:10 Pillaiyar Kovil Street,</p>
                                 <p>Periyakalaprt, Puducherry-14</p>
                                 <p>Landmark: Near Fire Station</p>
                             </div>
-
-
                         </div>
-                        <div  className="mt-4 hidden lg:flex items-center space-x-5 " >
+                        <div className="w-full max-w-sm pt-3">
+                            <div className="">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.5374537002544!2d79.86619890000003!3d12.033205299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5365006a9b29a1%3A0x9d248ab6f9b18f30!2sAADHI%20Engineering%20Works!5e0!3m2!1sen!2sin!4v1728288363724!5m2!1sen!2sin&zoom=15"
+                                    className="w-full h-52 border-0" 
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    title="AADHI Engineering Works"
+                                />
+                            </div>
+                        </div>
+
+                        <div className="mt-4 hidden lg:flex items-center space-x-5 ">
                             <a href="https://wa.me/+919865219547" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" viewBox="0 0 128 128"><path fill="#0076b2" d="M116 3H12a8.91 8.91 0 0 0-9 8.8v104.42a8.91 8.91 0 0 0 9 8.78h104a8.93 8.93 0 0 0 9-8.81V11.77A8.93 8.93 0 0 0 116 3"></path><path fill="#fff" d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 1 1-10.5 10.49a10.5 10.5 0 0 1 10.5-10.49m20.41 29h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z"></path></svg>
                             </a>

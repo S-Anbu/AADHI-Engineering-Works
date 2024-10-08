@@ -12,18 +12,18 @@ const ElectricalServices = () => {
                 {services.map((service, index) => (
                     <div
                         key={index}
-                        className="group  bg- w-36 md:w-42 h-36 md:h-42 flex shadow-[0_0_25px_8px_rgba(0,0,0,0.7)] flex-col items-center justify-center rounded-full 
+                        className="group  bg- w-36 md:w-42 lg:w-44 h-36 md:h-42 lg:h-44 flex shadow-[0_0_25px_8px_rgba(0,0,0,0.7)] flex-col items-center justify-center rounded-full 
             transition-shadow  hover:shadow-[0_0_25px_8px_rgba(255,255,0,0.7)] hover:bg-[#fce200] hover:text-black hover:fill-black"
                     >
                         <div className="text-[#fce200] text-5xl mb-3 ">{service.icon}</div>
-                        <p className="text-center group-hover:text-black font-bold ">{service.name}</p>
+                        <p className="text-center  group-hover:text-black font-bold ">{service.name}</p>
                     </div>
                 ))}
             </div>
 
             <div className="flex justify-center mt-10">
                 <button className="bg-[#fce200] text-black py-2 px-6 rounded-full font-bold text-lg shadow-lg">
-                    Find Your Location ⚡
+                    Book a Call ⚡
                 </button>
             </div>
         </div>
