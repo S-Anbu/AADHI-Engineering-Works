@@ -33,26 +33,30 @@ const navListMenuItems = [
         title: "Welding",
         description: "Find the perfect solution for your needs.",
         icon: SparklesIcon,
+        href: '#Welding'
+
     },
     {
         title: "Plumbing",
         description: "Meet and learn about our dedication",
         icon: WrenchIcon,
+        href: '#Plumbing'
     },
     {
         title: "Electrical",
         description: "Find the perfect solution for your needs.",
         icon: BoltIcon,
+        href: '#Electrical'
     }
-    
+
 ];
 
 function NavListMenu() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
     const renderItems = navListMenuItems.map(
-        ({ icon, title, description }, key) => (
-            <a href="#" key={key}>
+        ({ icon, title, description, href }, key) => (
+            <a href={href} key={key}>
                 <MenuItem className="flex items-center gap-3 rounded-lg">
                     <div className="flex items-center justify-center rounded-lg  !bg-blue-gray-50 p-2 ">
                         {" "}
@@ -124,7 +128,7 @@ function NavListMenu() {
     );
 }
 
-function NavList({setOpenNav}) {
+function NavList({ setOpenNav }) {
     return (
         <List className=" mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
             <Typography
@@ -157,9 +161,11 @@ function NavList({setOpenNav}) {
                 color="blue-gray"
                 className="font-semibold"
             >
-                <ListItem className="flex items-center gap-2 py-2 pr-4 focus:text-yellow-800 uppercase" onClick={() => setOpenNav(false)}>
-                    works
-                </ListItem>
+                <a href="#works">
+                    <ListItem className="flex items-center gap-2 py-2 pr-4 focus:text-yellow-800 uppercase" onClick={() => setOpenNav(false)}>
+                        works
+                    </ListItem>
+                </a>
             </Typography>
             <Typography
                 as="a"
@@ -169,9 +175,9 @@ function NavList({setOpenNav}) {
                 className="font-semibold"
             >
                 <a href="#Contacts">
-                <ListItem className="flex items-center gap-2 py-2 pr-4 focus:text-yellow-800 uppercase" onClick={() => setOpenNav(false)}>
-                    Contact
-                </ListItem>
+                    <ListItem className="flex items-center gap-2 py-2 pr-4 focus:text-yellow-800 uppercase" onClick={() => setOpenNav(false)}>
+                        Contact
+                    </ListItem>
                 </a>
             </Typography>
         </List>

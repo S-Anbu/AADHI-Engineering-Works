@@ -2,7 +2,7 @@ import React from 'react';
 import { Pservices } from './data/Pservices';
 const PlumbingServices = () => {
     return (
-        <div className="bg-gray-900 text-white py-10 mx-4 rounded">
+        <div id='Plumbing' className="bg-gray-900 text-white py-10 mx-4 rounded pt-[70px]">
             <div className="text-center">
                 <h2 className="text-[#fce200] text-3xl md:text-4xl font-bold mb-4">Plumbing Services</h2>
                 <p className=" text-md md:text-lg px-2 md:px-0">Get Professional Plumbing Help Today</p>
@@ -21,9 +21,11 @@ const PlumbingServices = () => {
             </div>
 
             <div className="flex justify-center mt-10">
-                <button className="bg-[#fce200] text-black py-2 px-6 rounded-full font-bold text-lg shadow-lg">
-                    Book a Call ⚡
-                </button>
+                <a href="tel:+919865219547">
+                    <button className="bg-[#fce200] text-black py-2 px-6 rounded-full font-bold text-lg shadow-lg">
+                        Book a Call ⚡
+                    </button>
+                </a>
             </div>
         </div>
     );

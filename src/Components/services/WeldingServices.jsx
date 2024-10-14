@@ -2,10 +2,10 @@ import React from 'react';
 import { Wservices } from './data/Wservices';
 const WeldingServices = () => {
     return (
-        <div className="bg-gray-900 text-white py-10 mx-4 rounded">
+        <div id='Welding' className="bg-gray-900 text-white py-10 mx-4 my-3 rounded pt-[70px]">
             <div className="text-center">
-                <h2 className="text-[#fce200] text-3xl md:text-4xl font-bold mb-4">Electrical Services</h2>
-                <p className=" text-md md:text-lg px-2 md:px-0">Have an Expert Home Electrician Help You Today</p>
+                <h2 className="text-[#fce200] text-3xl md:text-4xl font-bold mb-4">Welding Services</h2>
+                <p className=" text-md md:text-lg px-2 md:px-0">Have an Expert Welder Help You Today</p>
             </div>
 
             <div className=" grid grid-cols-2 md:grid-cols-4 place-items-center mt-5 gap-y-8 gap-4- px-4 ">
@@ -22,9 +22,11 @@ const WeldingServices = () => {
             </div>
 
             <div className="flex justify-center mt-10">
+            <a href="tel:+919865219547">
                 <button className="bg-[#fce200] text-black py-2 px-6 rounded-full font-bold text-lg shadow-lg">
                     Book a Call ⚡
                 </button>
+            </a>
             </div>
         </div>
     );

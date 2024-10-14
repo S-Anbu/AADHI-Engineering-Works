@@ -42,22 +42,29 @@ const About = () => {
                 </div>
                 <div className="flex flex-col md:flex-row justify-between p-4 pt-10 space-y-4 md:space-y-0">
                     {/* Welding Card */}
-                    <div className="flex items-center justify-center gap-2 bg-white shadow-lg rounded-lg p-4 w-full md:w-1/4">
-                        <img src={welding} alt="" className='w-12'/>
-                        <h2 className="text-xl font-semibold text-gray-800">Welding</h2>
-                    </div>
+                    
+                        <a href="#Welding" className="flex items-center justify-center gap-2 bg-white shadow-lg rounded-lg p-4 w-full md:w-1/4">
+                            
+                            <img src={welding} alt="" className='w-12' />
+                            <h2 className="text-xl font-semibold text-gray-800">Welding</h2>
+                        </a>
+                  
 
                     {/* Plumbing Card */}
-                    <div className="flex items-center justify-center gap-2  bg-white shadow-lg rounded-lg p-4 w-full md:w-1/4">
-                        <img src={plumbing} alt="" className='w-12' />
-                        <h2 className="text-xl font-semibold text-gray-800">Plumbing</h2>
-                    </div>
+                    
+                        <a href="#Plumbing" className="flex items-center justify-center gap-2  bg-white shadow-lg rounded-lg p-4 w-full md:w-1/4">
+                            <img src={plumbing} alt="" className='w-12' />
+                            <h2 className="text-xl font-semibold text-gray-800">Plumbing</h2>
+                        </a>
+                    
 
                     {/* Electrical Card */}
-                    <div className="flex items-center justify-center gap-2 bg-white shadow-lg rounded-lg p-4 w-full md:w-1/4">
-                        <img src={drilling} alt="" className='w-12' />
-                        <h2 className="text-xl font-semibold text-gray-800">Electrical</h2>
-                    </div>
+                    
+                        <a href="#Electrical" className="flex items-center justify-center gap-2 bg-white shadow-lg rounded-lg p-4 w-full md:w-1/4">
+                            <img src={drilling} alt="" className='w-12' />
+                            <h2 className="text-xl font-semibold text-gray-800">Electrical</h2>
+                        </a>
+                    
                 </div>
             </div>
             <div>

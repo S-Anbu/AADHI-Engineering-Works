@@ -9,7 +9,7 @@ const ConsultationButton = () => {
       <div>
         <h4 className="text-black font-bold">Book a Service Call</h4>
         <p className="text-gray-800">(+91) 9865219547</p>
-      </div>
+      </div> 
     </a>
   );
 };

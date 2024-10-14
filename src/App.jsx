@@ -10,6 +10,7 @@ import ElectricalServices from './Components/services/ElectricalServices'
 import PlumbingServices from './Components/services/PlumbingServices'
 import Serviceindex from './Components/services/Serviceindex'
 import WeldingServices from './Components/services/WeldingServices'
+import { GalleryWithTab } from './Components/Works/GalleryWithTab'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
       <WeldingServices/>
       <PlumbingServices/>
       <Whatsapp/>
+      <GalleryWithTab/>
       <Contact />
       <Footerindex />
       <Footer />

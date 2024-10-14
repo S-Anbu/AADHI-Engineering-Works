@@ -36,7 +36,6 @@ const Contact = () => {
                 <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
                     <form
                         ref={form} onSubmit={sendEmail}
-                        data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
                         className="bg-white p-8 rounded-md shadow-xl w-full max-w-sm md:max-w-lg"
                     >
                         <h2 className="text-2xl font-semibold mb-6 text-gray-800">Contact us</h2>
@@ -91,7 +90,7 @@ const Contact = () => {
                             </button>
                         </div>
                     </form>
-                    <div className="text-xl flex flex-col items-center sm:text-2xl p-6 rounded-lg w-fit" data-aos="fade-down" data-aos-delay="50" data-aos-duration="2000">
+                    <div className="text-xl flex flex-col items-center sm:text-2xl p-6 rounded-lg w-fit" >
                         <div className="flex items-center mb-4">
                             <MdEmail className="mr-3 text-2xl fill-blue-700 " /> {/* Email Icon */}
                             <span className='text-sm md:text-2xl font-semibold'>aadhiengineeringworks2021@gmail.com</span>

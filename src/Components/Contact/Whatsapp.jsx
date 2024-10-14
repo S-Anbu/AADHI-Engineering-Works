@@ -12,7 +12,7 @@ const Datas = {
 
 const Whatsapp = () => {
   return (
-    <div className='flex flex-col lg:flex-row  items-center justify-evenly text-center bg-black mx-4 pt-3 rounded mt-5 '>
+    <div id='whatsapp' className='flex flex-col  lg:flex-row  items-center justify-evenly text-center bg-black mx-4 pt-16 rounded mt-5 '>
       <div className=' flex flex-col items-center lg:space-y-3 justify-center py-4'>
         <div className=' px-4 py-2  '>
           <h1 className='text-2xl md:text-4xl pb-3 font-bold text-[#fce200]'>Request IN WhatsApp</h1>
