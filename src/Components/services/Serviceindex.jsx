@@ -11,7 +11,7 @@ const Serviceindex = () => {
     {
       icon: <FaHandshake />,
       title: 'Local Technicians You Can Trust',
-      description: 'All Mister Sparky techs are trained, licensed, insured, and local.',
+      description: 'All AADHI techs are trained, licensed, insured, and local.',
     },
     {
       icon: <FaFileInvoiceDollar />,

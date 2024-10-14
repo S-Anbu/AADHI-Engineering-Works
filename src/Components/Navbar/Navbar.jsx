@@ -43,22 +43,8 @@ const navListMenuItems = [
         title: "Electrical",
         description: "Find the perfect solution for your needs.",
         icon: BoltIcon,
-    },
-    {
-        title: "Works",
-        description: "Learn how we can help you achieve your goals.",
-        icon: SunIcon,
-    },
-    {
-        title: "Products",
-        description: "Find the perfect solution for your needs.",
-        icon: RectangleGroupIcon,
-    },
-    {
-        title: "Contact",
-        description: "Find the perfect solution for your needs.",
-        icon: PhoneIcon,
-    },
+    }
+    
 ];
 
 function NavListMenu() {

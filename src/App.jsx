@@ -7,7 +7,9 @@ import Footerindex from './Components/footer/Footerindex'
 import Home from './Components/Home/Home'
 import { NavbarIndex } from './Components/Navbar/Navbar'
 import ElectricalServices from './Components/services/ElectricalServices'
+import PlumbingServices from './Components/services/PlumbingServices'
 import Serviceindex from './Components/services/Serviceindex'
+import WeldingServices from './Components/services/WeldingServices'
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
       <About />
       <Serviceindex/>
       <ElectricalServices/>
+      <WeldingServices/>
+      <PlumbingServices/>
       <Whatsapp/>
       <Contact />
       <Footerindex />

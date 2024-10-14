@@ -91,25 +91,25 @@ const Contact = () => {
                             </button>
                         </div>
                     </form>
-                    <div className="text-xl sm:text-2xl p-6 rounded-lg w-fit" data-aos="fade-down" data-aos-delay="50" data-aos-duration="2000">
+                    <div className="text-xl flex flex-col items-center sm:text-2xl p-6 rounded-lg w-fit" data-aos="fade-down" data-aos-delay="50" data-aos-duration="2000">
                         <div className="flex items-center mb-4">
-                            <MdEmail className="mr-3 text-2xl" /> {/* Email Icon */}
+                            <MdEmail className="mr-3 text-2xl fill-blue-700 " /> {/* Email Icon */}
                             <span className='text-sm md:text-2xl font-semibold'>aadhiengineeringworks2021@gmail.com</span>
                         </div>
                         <div className="flex items-center mb-4">
-                            <MdPhone className="mr-3 text-2xl" /> {/* Phone Icon */}
+                            <MdPhone className="mr-3 text-2xl fill-green-700" /> {/* Phone Icon */}
                             <span className='font-semibold text-sm md:text-2xl'> +91 9865219547</span>
                             <span className='font-semibold text-sm md:text-2xl'> / +91 7397089417</span>
                         </div>
-                        <div className="flex items-start">
-                            <MdLocationOn className="mr-3 text-2xl" /> {/* Location Icon */}
+                        <div className="flex items-center">
+                            <MdLocationOn className="mr-3 text-2xl fill-deep-orange-600" /> {/* Location Icon */}
                             <div className='font-semibold text-sm md:text-2xl'>
                                 <p>NO:10 Pillaiyar Kovil Street,</p>
                                 <p>Periyakalaprt, Puducherry-14</p>
                                 <p>Landmark: Near Fire Station</p>
                             </div>
                         </div>
-                        <div className="w-full max-w-sm pt-3">
+                        <div className="w-full max-w-xl pt-3">
                             <div className="">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.5374537002544!2d79.86619890000003!3d12.033205299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5365006a9b29a1%3A0x9d248ab6f9b18f30!2sAADHI%20Engineering%20Works!5e0!3m2!1sen!2sin!4v1728288363724!5m2!1sen!2sin&zoom=15"
@@ -124,16 +124,16 @@ const Contact = () => {
 
                         <div className="mt-4 hidden lg:flex items-center space-x-5 ">
                             <a href="https://wa.me/+919865219547" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" viewBox="0 0 128 128"><path fill="#0076b2" d="M116 3H12a8.91 8.91 0 0 0-9 8.8v104.42a8.91 8.91 0 0 0 9 8.78h104a8.93 8.93 0 0 0 9-8.81V11.77A8.93 8.93 0 0 0 116 3"></path><path fill="#fff" d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 1 1-10.5 10.49a10.5 10.5 0 0 1 10.5-10.49m20.41 29h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 128 128"><path fill="#0076b2" d="M116 3H12a8.91 8.91 0 0 0-9 8.8v104.42a8.91 8.91 0 0 0 9 8.78h104a8.93 8.93 0 0 0 9-8.81V11.77A8.93 8.93 0 0 0 116 3"></path><path fill="#fff" d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 1 1-10.5 10.49a10.5 10.5 0 0 1 10.5-10.49m20.41 29h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z"></path></svg>
                             </a>
                             <a href="https://github.com/S-Anbu/" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path></svg>
                             </a>
                             <a href="https://wa.me/+919865219547" target="_blank">
-                                <img src="https://api.iconify.design/logos:whatsapp-icon.svg?color=%23888888" width={50} alt="Whatsapp" />
+                                <img src="https://api.iconify.design/logos:whatsapp-icon.svg?color=%23888888" width={40} alt="Whatsapp" />
                             </a>
                             <a href="https://wa.me/+919865219547" target="_blank">
-                                <img src="https://api.iconify.design/skill-icons:instagram.svg?color=%23888888" width={50} alt="instagram" />
+                                <img src="https://api.iconify.design/skill-icons:instagram.svg?color=%23888888" width={35} alt="instagram" />
                             </a>
                         </div>
                     </div>

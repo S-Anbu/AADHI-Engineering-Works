@@ -10,7 +10,7 @@ import ConsultationButton from '../Navbar/ConsultationButton';
 
 const Home = () => {
     return (
-        <div className='pt-16'>
+        <div className='pt-16 space-y-8 md:space-y-3'>
             <CarouselDefault className="hidden md:block " />
             <CarouselMobile className="" />
             <div className=' lg:hidden bg-gray-300 text-center mx-4 rounded-md p-4 my-4 flex items-center justify-center'>

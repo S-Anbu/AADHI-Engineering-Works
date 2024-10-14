@@ -88,12 +88,12 @@ export function CarouselDefault() {
             className="h-full w-full object-cover relative"
           />
           <div className="absolute bg-black/60 w-full h-full top-0 text-white flex flex-col items-center justify-center gap-y-8">
-            <h1 className="uppercase text-[20px] text-yellow-600 font-bold">{slide.title}</h1>
+            <h1 className="uppercase text-[20px] text-[#fce200] font-bold">{slide.title}</h1>
             <div className="text-center flex flex-col gap-2">
             <p className="text-3xl sm:text-5xl font-bold">{slide.subtitle1}</p>
             <p className="text-3xl sm:text-5xl font-bold">{slide.subtitle2}</p>
             </div>
-            <button className="uppercase px-4 py-2 rounded-md font-bold bg-[#ffc107] bg-opacity-90 ">
+            <button className="uppercase px-4 py-2 text-black rounded-md font-bold bg-[#fce200] bg-opacity-90 ">
               {slide.buttonText}
             </button>
           </div>

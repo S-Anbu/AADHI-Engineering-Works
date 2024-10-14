@@ -5,10 +5,10 @@ import drilling from '../../assets/About/drilling.svg';
 import welding from '../../assets/About/welding.svg';
 const Footerindex = () => {
     return (
-        <div className='m-4 px-2 '>
+        <div className='hidden md:block m-4 px-2 '>
             <div className='flex flex-col lg:flex-row items-center justify-around'>
                 <div className=" ">
-                    <img src={AADHI3} alt="" className=' w-24 rounded-xl' />
+                    <img src={AADHI3} alt="" className=' w-sm sm:w-24 rounded-xl' />
                 </div>
                 <div className="flex flex-col md:flex-row justify-between p-4  gap-8 space-y-4 md:space-y-0">
                     {/* Welding Card */}

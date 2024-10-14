@@ -23,11 +23,11 @@ const About = () => {
         <section id='About' name='About' className='py-20  mx-4' >
             <div className="bg-gray-100 p-8 lg:px-20 pt-10 rounded-lg max-w-full mx-auto">
                 <h1 className="text-3xl font-bold text-gray-800 mb-4">About Us</h1>
-                <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+                <h2 className=" text-md md:text-2xl font-semibold text-gray-800 mb-4">
                     Our goal is to bring the highest quality, integrity, & customer service.
                 </h2>
                 <div className='flex flex-col lg:flex-row items-center h-auto justify-center lg:gap-x-10'>
-                    <ul className="list-disc pl-5 text-lg text-gray-600 leading-relaxed space-y-2">
+                    <ul className="list-disc pl-5 text-sm md:text-lg text-gray-600 leading-relaxed space-y-2">
                         <li>Over 10 years of experience in welding, plumbing, and electrical services.</li>
                         <li>Specialize in delivering top-quality solutions for all types of projects.</li>
                         <li>Trusted partner for all home and business service needs.</li>
