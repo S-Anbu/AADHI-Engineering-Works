@@ -19,9 +19,6 @@ import {
     XMarkIcon,
 } from "@heroicons/react/24/outline";
 import {
-    PhoneIcon,
-    RectangleGroupIcon,
-    SunIcon,
     SparklesIcon,
     BoltIcon,
     WrenchIcon
@@ -177,6 +174,19 @@ function NavList({ setOpenNav }) {
                 <a href="#Contacts">
                     <ListItem className="flex items-center gap-2 py-2 pr-4 focus:text-yellow-800 uppercase" onClick={() => setOpenNav(false)}>
                         Contact
+                    </ListItem>
+                </a>
+            </Typography>
+            <Typography
+                as="a"
+                href="#"
+                variant="small"
+                color="blue-gray"
+                className="font-semibold"
+            >
+                <a href="#Payment">
+                    <ListItem className="flex items-center gap-2 py-2 pr-4 focus:text-yellow-800 uppercase" onClick={() => setOpenNav(false)}>
+                        Payment
                     </ListItem>
                 </a>
             </Typography>

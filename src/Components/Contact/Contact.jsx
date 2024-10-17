@@ -162,8 +162,20 @@ const Contact = () => {
                                 <p>Landmark: Near Fire Station</p>
                             </div>
                         </div>
+                        <div className="w-full max-w-xl py-3">
+                            <div className="">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.5374537002544!2d79.86619890000003!3d12.033205299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5365006a9b29a1%3A0x9d248ab6f9b18f30!2sAADHI%20Engineering%20Works!5e0!3m2!1sen!2sin!4v1728288363724!5m2!1sen!2sin&zoom=15"
+                                    className="w-full h-52 border-0" 
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    title="AADHI Engineering Works"
+                                />
+                            </div>
+                        </div>
 
-                        <div className=" hidden  md:flex items-center justify-center space-x-5 mt-3  ">
+                        <div className=" hidden  md:flex items-center justify-center space-x-5 mt-3 pb-2  ">
                             <a href="https://wa.me/+919865219547" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1.7rem" height="1.7rem" viewBox="0 0 128 128"><path fill="#0076b2" d="M116 3H12a8.91 8.91 0 0 0-9 8.8v104.42a8.91 8.91 0 0 0 9 8.78h104a8.93 8.93 0 0 0 9-8.81V11.77A8.93 8.93 0 0 0 116 3"></path><path fill="#fff" d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 1 1-10.5 10.49a10.5 10.5 0 0 1 10.5-10.49m20.41 29h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z"></path></svg>
                             </a>

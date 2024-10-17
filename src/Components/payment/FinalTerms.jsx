@@ -35,8 +35,8 @@ export function Termsandconditions() {
     
     </div>
         </DialogBody>
-        <DialogFooter className="space-x-2">
-          <Button variant="text" color="blue-gray" onClick={handleOpen}>
+        <DialogFooter className=" flex items-center justify-center space-x-2">
+          <Button variant="text" color="blue-gray" className="bg-gray-200"  onClick={handleOpen}>
             close
           </Button>
           <Button variant="gradient" onClick={handleOpen}>

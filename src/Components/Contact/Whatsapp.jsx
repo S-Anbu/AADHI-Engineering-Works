@@ -13,8 +13,8 @@ const Datas = {
 
 const Whatsapp = () => {
   return (
-    <div id='whatsapp' className='flex flex-col  lg:flex-row  items-center justify-evenly text-center bg-black mx-4 pt-16 rounded mt-5 '>
-      <div className=' flex flex-col items-center lg:space-y-3 justify-center py-4'>
+    <div id='Payment' className='flex flex-col  lg:flex-row  items-center justify-evenly text-center bg-black mx-4 pt-16 rounded mt-5 '>
+      <div className=' flex flex-col space-y-3 items-center  justify-center py-4'>
         <div className=' px-4 py-2  '>
           <h1 className='text-2xl md:text-4xl pb-3 font-bold text-[#fce200]'>Request IN WhatsApp</h1>
           <h2 className='text-lg md:text-2xl font-bold text-white'>Got a question?</h2>
@@ -26,7 +26,7 @@ const Whatsapp = () => {
           </button>
         </a>
         <NotificationDialog/>
-        <Termsandconditions/>
+        <Termsandconditions  />
       </div>
       <div className="flex justify-center items-center max-w-sm sm:max-w-md p-4 md:p-10  bg-green-500 rounded">
         <div className="bg-white flex flex-col items-center rounded-xl shadow-lg p-3 md:p-8 text-center">
