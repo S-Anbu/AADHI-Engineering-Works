@@ -140,7 +140,6 @@ function NavList({ setOpenNav }) {
             <NavListMenu />
             <Typography
                 as="a"
-                href=""
                 variant="small"
                 color="blue-gray"
                 className="font-semibold"
@@ -153,7 +152,6 @@ function NavList({ setOpenNav }) {
             </Typography>
             <Typography
                 as="a"
-                href="#"
                 variant="small"
                 color="blue-gray"
                 className="font-semibold"
@@ -166,7 +164,6 @@ function NavList({ setOpenNav }) {
             </Typography>
             <Typography
                 as="a"
-                href="#"
                 variant="small"
                 color="blue-gray"
                 className="font-semibold"

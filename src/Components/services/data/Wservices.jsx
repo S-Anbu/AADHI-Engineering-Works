@@ -3,8 +3,8 @@ export const Wservices = [
         name: 'Grills Gates ', icon: <svg className='fill-[#fce200] w-16 group-hover:fill-black' viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path  d="M248 88v32.652c-5.287.834-10.615 2.448-16 4.63V104h-16v29.16c-1.698.96-3.402 1.953-5.115 2.98-3.598 2.16-7.23 4.48-10.885 6.905V120h-16v34.19c-5.324 3.85-10.664 7.826-16 11.822V152h-16v25.965c-5.402 4.008-10.75 7.9-16 11.592V168h-16v32.213c-1.04.647-2.09 1.312-3.115 1.928-4.448 2.67-8.766 5.003-12.885 6.962V200H88V214.973c-2.89.67-5.575 1.027-8 1.027h-8v-32H24v304h48V232h8c2.658 0 5.324-.23 8-.652V488h16V226.717c5.272-2.138 10.6-4.82 16-7.877V488h16V208.955c5.294-3.512 10.637-7.264 16-11.144V488h16V344h16v144h16V162.443c5.462-3.838 10.81-7.427 16-10.656V296h16V142.898c5.793-2.754 11.188-4.755 16-5.87V296h16V137.027c4.812 1.116 10.207 3.117 16 5.87V296h16V151.787c5.19 3.23 10.538 6.818 16 10.656V488h16V344h16v144h16V197.81c5.363 3.88 10.706 7.633 16 11.145V488h16V218.84c5.4 3.056 10.728 5.74 16 7.877V488h16V231.348c2.676.422 5.342.652 8 .652h8v256h48V184h-48v32h-8c-2.425 0-5.11-.357-8-1.027V200h-16v9.102c-4.12-1.96-8.437-4.292-12.885-6.96-1.026-.617-2.075-1.282-3.115-1.93V168h-16V189.557c-5.252-3.69-10.598-7.584-16-11.592V152h-16v14.012c-5.336-3.996-10.676-7.97-16-11.823V120h-16v23.045c-3.654-2.424-7.287-4.746-10.885-6.904-1.713-1.027-3.417-2.02-5.115-2.98V104h-16v21.283c-5.385-2.183-10.713-3.797-16-4.63V88h-16zM48 120c-13.35 0-24 10.65-24 24s10.65 24 24 24 24-10.65 24-24-10.65-24-24-24zm416 0c-13.35 0-24 10.65-24 24s10.65 24 24 24 24-10.65 24-24-10.65-24-24-24zm-280 54.035V328h-16V185.988c1.6-1.198 3.203-2.39 4.8-3.588 3.75-2.81 7.484-5.608 11.2-8.365zm144 0c3.716 2.757 7.45 5.555 11.2 8.365 1.597 1.2 3.2 2.39 4.8 3.588V328h-16V174.035zM216 312v32h80v-32h-80zm0 48v128h16V360h-16zm32 0v128h16V360h-16zm32 0v128h16V360h-16z"/></svg>
     },
     {
-        name: 'Balcony Railings', icon: <svg className='fill-[#fce200] w-16 group-hover:fill-black' version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-        viewBox="0 0 371.435 371.435" xml:space="preserve">
+        name: 'Balcony Railings', icon: <svg className='fill-[#fce200] w-16 group-hover:fill-black' version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"  
+        viewBox="0 0 371.435 371.435" >
    <path d="M369.717,279.514c0-9.021-7.312-16.334-16.332-16.334h-8.375c-0.114-5.848-2.9-11.033-7.186-14.406
        c3.1-0.112,5.581-2.652,5.581-5.782c0-2.395-1.454-4.449-3.524-5.332c13.278-6.59,13.656-24.128,7.45-43.182l-12.175-39.709h2.457
        c3.198,0,5.792-2.594,5.792-5.791c0-2.754-1.924-5.055-4.5-5.643c4.438-3.66,7.268-9.201,7.268-15.402
@@ -40,7 +40,7 @@ export const Wservices = [
    </svg>
     },
     {
-        name: 'Metal Furnitures', icon: <svg className='fill-[#fce200] w-16 group-hover:fill-black' viewBox="0 0 512 512" enable-background="new 0 0 512 512" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        name: 'Metal Furnitures', icon: <svg className='fill-[#fce200] w-16 group-hover:fill-black' viewBox="0 0 512 512"  id="Layer_1" version="1.1"  xmlns="http://www.w3.org/2000/svg" >
 
         <g>
         
@@ -95,8 +95,8 @@ export const Wservices = [
         </svg>
     },
     {
-        name: 'Staircase Railings', icon: <svg className='fill-[#fce200] group-hover:fill-black w-16' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-        viewBox="0 0 298.899 298.899" xml:space="preserve">
+        name: 'Staircase Railings', icon: <svg className='fill-[#fce200] group-hover:fill-black w-16' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  
+        viewBox="0 0 298.899 298.899" >
    <g id="XMLID_1500_">
        <g>
            <g>
@@ -150,8 +150,8 @@ export const Wservices = [
         
     },
     {
-        name: 'Roofing Works', icon: <svg  className='fill-[#fce200] group-hover:fill-black w-16' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-        viewBox="0 0 511.999 511.999" xml:space="preserve">
+        name: 'Roofing Works', icon: <svg  className='fill-[#fce200] group-hover:fill-black w-16' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  
+        viewBox="0 0 511.999 511.999" >
    <g>
        <g>
            <path d="M246.858,33.002c-0.794-4.319-4.937-7.172-9.256-6.383c-29.545,5.43-46.818,23.145-60.697,37.38
@@ -189,8 +189,8 @@ export const Wservices = [
    </svg>
     },
     {
-        name: 'Truss Works', icon: <svg className='fill-[#fce200] group-hover:fill-black w-16' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-        viewBox="0 0 510.536 510.536" xml:space="preserve">
+        name: 'Truss Works', icon: <svg className='fill-[#fce200] group-hover:fill-black w-16' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  
+        viewBox="0 0 510.536 510.536" >
    <g>
        <g>
            <path d="M508.727,6.572c-1.621-2.074-4.104-3.285-6.724-3.285H365.47H225.387c-0.631,0-1.203,0.265-1.809,0.401
