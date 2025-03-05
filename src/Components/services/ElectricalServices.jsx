@@ -3,6 +3,8 @@ import { Eservices } from './data/Eservices';
 
 const ElectricalServices = () => {
     return (
+        <section id="Electrical" name="Electrical" className="pt-16">
+
         <div id='Electrical' className="bg-gray-900 text-white py-10 mx-4 my-3 rounded pt-[70px]">
             <div className="text-center">
                 <h2 className="text-[#fce200] text-3xl md:text-4xl font-bold mb-4">Electrical Services</h2>
@@ -30,6 +32,7 @@ const ElectricalServices = () => {
                 </a>
             </div>
         </div>
+        </section>
     );
 };
 

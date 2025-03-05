@@ -2,7 +2,8 @@ import React from 'react';
 import { Wservices } from './data/Wservices';
 const WeldingServices = () => {
     return (
-        <div id='Welding' className="bg-gray-900 text-white py-10 mx-4 my-3 rounded pt-[70px]">
+        <section id='Welding' name='Welding' className='pt-16'>
+        <div id='Welding' className="bg-gray-900 text-white py-10 mx-4 my-3 rounded ">
             <div className="text-center">
                 <h2 className="text-[#fce200] text-3xl md:text-4xl font-bold mb-4">Welding Services</h2>
                 <p className=" text-md md:text-lg px-2 md:px-0">Have an Expert Welder Help You Today</p>
@@ -29,6 +30,7 @@ const WeldingServices = () => {
             </a>
             </div>
         </div>
+        </section>
     );
 };
 

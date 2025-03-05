@@ -30,7 +30,7 @@ const Footerindex = () => {
                     </a>
                 </div>
                 <div className="flex items-center space-x-4">
-                    <a href='#whatsapp' className="bg-yellow-700 text-white px-4 py-2 font-semibold rounded-lg ">
+                    <a href='https://wa.me/+919865219547' className="bg-yellow-700 text-white px-4 py-2 font-semibold rounded-lg ">
                         {/* Calendar Icon */}
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 inline-block">
                             <path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z" />
@@ -39,7 +39,7 @@ const Footerindex = () => {
                     </a>
                     <div className="flex items-center text-black font-semibold">
                         {/* Phone Icon */}
-                        <a href="tel:+919865219547" className='px-1 md:px-4 py-2 rounded-lg bg-blue-gray-100'>
+                        <a href="tel:+919865219547" target="_blank" className='px-1 md:px-4 py-2 rounded-lg bg-blue-gray-100'>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 inline-block mr-1">
                                 <path d="M22 16.92V21a2 2 0 0 1-2.18 2A19.83 19.83 0 0 1 3 5.18 2 2 0 0 1 5 3h4.09a2 2 0 0 1 2 1.72l.55 4.1a2 2 0 0 1-1 2.12l-2.43 1.21a16 16 0 0 0 7.15 7.16l1.21-2.43a2 2 0 0 1 2.12-1l4.1.55a2 2 0 0 1 1.72 2z" />
                             </svg>

@@ -75,7 +75,7 @@ export function CarouselDefault() {
 
   return (
     <Carousel
-      className="rounded-xl w-auto mx-4 my-3 h-80 md:h-96 hidden lg:flex"
+      className="rounded-xl w-auto mx-4 my-3 h-80 md:h-[450px] hidden lg:flex"
       loop={true}
       autoplay={true}
       transition={{ duration: 1 }}

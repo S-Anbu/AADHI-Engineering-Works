@@ -20,7 +20,7 @@ const About = () => {
         { id: 6, src: slider7, alt: 'Image 6' },
     ];
     return (
-        <section id='About' name='About' className='py-20  mx-4' >
+        <section id='About' name='About' className='pt-20  mx-4' >
             <div className="bg-gray-100 p-8 lg:px-20 pt-10 rounded-lg max-w-full mx-auto">
                 <h1 className="text-3xl font-bold text-gray-800 mb-4">About Us</h1>
                 <h2 className=" text-md md:text-2xl font-semibold text-gray-800 mb-4">

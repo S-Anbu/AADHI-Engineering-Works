@@ -3,7 +3,7 @@ import whats from '../../assets/Contact/whats.png'
 import aadhi from '../../assets/AADHI3.png'
 import { NotificationDialog } from '../payment/NotificationDialog';
 import { Termsandconditions } from '../payment/FinalTerms';
-import RazorpayButton from '../payment/RazorpayButton';
+// import RazorpayButton from '../payment/RazorpayButton';
 
 const Datas = {
   profileImage: aadhi, // Replace with actual profile image URL
@@ -14,7 +14,9 @@ const Datas = {
 
 const Whatsapp = () => {
   return (
-    <div id='Payment' className='flex flex-col  lg:flex-row  items-center justify-evenly text-center bg-black mx-4 pt-16 rounded mt-5 '>
+    <section id='Payment' name='Payment' className='pt-16 '>
+
+    <div id='Payment' className='flex flex-col  lg:flex-row  items-center justify-evenly text-center bg-black mx-4 py-8 rounded mt-5 '>
       <div className=' flex flex-col space-y-3 items-center  justify-center py-4'>
         <div className=' px-4 py-2  '>
           <h1 className='text-2xl md:text-4xl pb-3 font-bold text-[#fce200]'>Request IN WhatsApp</h1>
@@ -27,7 +29,7 @@ const Whatsapp = () => {
           </button>
         </a>
         <NotificationDialog/>
-        <RazorpayButton/>
+        {/* <RazorpayButton/> */}
         <Termsandconditions  />
       </div>
       <div className="flex justify-center items-center max-w-sm sm:max-w-md p-4 md:p-10  bg-green-500 rounded">
@@ -58,6 +60,7 @@ const Whatsapp = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
