@@ -12,6 +12,7 @@ import PlumbingServices from "./Components/services/PlumbingServices";
 import Serviceindex from "./Components/services/Serviceindex";
 import WeldingServices from "./Components/services/WeldingServices";
 import { GalleryWithTab } from "./Components/Works/GalleryWithTab";
+import Price from "./Components/Pricedetails/Price";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Whatsapp />
       <GalleryWithTab />
       <Serviceindex />
+      <Price/>
       <Contact />
       <Footerindex />
       <Footer />
