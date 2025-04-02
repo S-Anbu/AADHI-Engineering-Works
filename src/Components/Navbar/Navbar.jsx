@@ -1,5 +1,7 @@
 import React from "react";
 import AADHI3 from "../../assets/AADHI3.png"
+import {Link} from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 import {
     Navbar,
     Collapse,
@@ -135,7 +137,9 @@ function NavList({ setOpenNav }) {
                 color="blue-gray"
                 className="font-semibold"
             >
+                <Link to="/" >
                 <ListItem className="flex items-center gap-2 py-2 pr-4  focus:text-yellow-800 " onClick={() => setOpenNav(false)} >HOME</ListItem>
+                </Link>
             </Typography>
             <NavListMenu />
             <Typography
@@ -181,9 +185,9 @@ function NavList({ setOpenNav }) {
                 color="blue-gray"
                 className="font-semibold"
             >
-                <a href="#Payment">
+                <a href="#price">
                     <ListItem className="flex items-center gap-2 py-2 pr-4 focus:text-yellow-800 uppercase" onClick={() => setOpenNav(false)}>
-                        Payment
+                        Price details
                     </ListItem>
                 </a>
             </Typography>
@@ -194,12 +198,13 @@ function NavList({ setOpenNav }) {
                 color="blue-gray"
                 className="font-semibold"
             >
-                <a href="#price">
+                <a href="#Payment">
                     <ListItem className="flex items-center gap-2 py-2 pr-4 focus:text-yellow-800 uppercase" onClick={() => setOpenNav(false)}>
-                        Price details
+                        Payment
                     </ListItem>
                 </a>
             </Typography>
+
         </List>
     );
 }
@@ -213,22 +218,30 @@ export function NavbarIndex() {
             () => window.innerWidth >= 960 && setOpenNav(false),
         );
     }, []);
-
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate("/Login"); // Redirects to /login
+      };
     return (
         <Navbar className="fixed top-0 z-50  mx-auto max-w-full px-4 py-2">
             <div className="flex items-center justify-between text-blue-gray-900">
+            <Link to="/" > 
                 <img src={AADHI3} className="w-12 h-12 rounded-full" alt="AADHI Engineering Works" />
+            </Link>
                 <Typography
                     as="a"
                     href="#"
                     variant="h6"
                     className="mr-4 cursor-pointer py-1.5 lg:ml-2 xl:text-2xl uppercase font-bold"
                 >
+                    <Link to="/" >
                     AADHI Engineering Works
+                    </Link>
                 </Typography>
                 <div className="hidden lg:block">
                     <NavList setOpenNav={setOpenNav} />
                 </div>
+                <button onClick={handleClick} className="bg-deep-orange-300 rounded px-3 py-1">@ login</button>
                 <div className="hidden gap-2 lg:flex">
                     <button>
                         <ConsultationButton />

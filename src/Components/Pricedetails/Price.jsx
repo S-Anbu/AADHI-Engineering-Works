@@ -56,24 +56,24 @@ function Price() {
 
   return (
     <section id="price" className="pt-20 mx-4">
-      <div className="container mx-auto p-6 bg-white shadow-lg rounded-xl">
+      <div className="container mx-auto py-6 px-0 md:px-6 bg-white shadow-lg rounded-xl">
         <h1 className="text-4xl font-extrabold text-center mb-6 text-gray-800">Latest Market Prices</h1>
         <p className="text-center text-gray-600 mb-4">Stay updated with the latest price trends.</p>
         <div className="overflow-x-auto">
           <table className="min-w-full border-collapse overflow-hidden shadow-lg rounded-lg">
             <thead className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
               <tr>
-                <th className="px-6 py-3 text-left text-lg">Variety</th>
-                <th className="px-6 py-3 text-left text-lg">Quantity</th>
-                <th className="px-6 py-3 text-left text-lg">Price Today</th>
+                <th className="px-7 md:px-3 py-3  text-lg">Variety</th>
+                <th className="px-3 py-3  text-lg">Quantity</th>
+                <th className="px-3 py-3  text-lg">Price Today</th>
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">
               {data.tables.map((item, index) => (
                 <tr key={index} className="hover:bg-gray-100 transition">
-                  <td className="px-0 md:px-6 py-4 text-gray-700 text-sm md:text-lg">{item.Variety || "N/A"}</td>
-                  <td className="px-6 md:px-6 py-4 text-gray-700 text-sm md:text-lg">{item.Quantity || "N/A"}</td>
-                  <td className="px-0 md:px-6 py-4 text-gray-700 text-sm md:text-lg font-semibold">{item["Price Today"] || "N/A"}</td>
+                  <td className="px-0 md:px-6 py-4 text-gray-700 text-center text-sm md:text-lg">{item.Variety || "N/A"}</td>
+                  <td className="pl-6 md:px-6 py-4 text-gray-700 text-center text-sm md:text-lg">{item.Quantity || "N/A"}</td>
+                  <td className="px-0 md:px-6 py-4 text-gray-700 text-center text-sm md:text-lg font-semibold">{item["Price Today"] || "N/A"}</td>
                 </tr>
               ))}
             </tbody>
