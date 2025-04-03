@@ -241,7 +241,7 @@ export function NavbarIndex() {
                 <div className="hidden lg:block">
                     <NavList setOpenNav={setOpenNav} />
                 </div>
-                <button onClick={handleClick} className="bg-deep-orange-300 rounded px-3 py-1">@ login</button>
+                <button onClick={handleClick} className="bg-deep-orange-300 rounded text-sm  hidden md:block md:px-3 py-1 ">@ login</button>
                 <div className="hidden gap-2 lg:flex">
                     <button>
                         <ConsultationButton />
