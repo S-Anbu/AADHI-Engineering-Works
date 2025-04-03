@@ -13,7 +13,7 @@ function Price() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://pricedetails.onrender.com/scrape-table");
+        const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/scrape-table`);
         
         if (response.data.tables && response.data.tables.length > 0) {
           setData({
