@@ -14,6 +14,7 @@ function Price() {
     const fetchData = async () => {
       try {
         const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/scrape-table`);
+        // console.log(response);
         
         if (response.data.tables && response.data.tables.length > 0) {
           setData({

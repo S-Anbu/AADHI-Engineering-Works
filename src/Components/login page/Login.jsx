@@ -1,15 +1,44 @@
 "use client";
 
+import axios from "axios";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [userId, setUserId] = useState("");
   const [password, setPassword] = useState("");
+const navigate=useNavigate()
+  const handleLogin = async () => {
+  try {
+    const res = await axios.post(
+      `http://localhost:3000/api/login`,
+      { userId, password },
+      {
+              headers: {
+          'Content-Type': 'application/json'
+        }
+      }
+    );
 
-  const handleLogin = () => {
-    console.log("Logging in with:", { userId, password });
-  };
+    if (res.status === 200) {
+      // setAlert("Logged in successfully");
+      console.log("Logged in successfully", res.data); // Log response data
+      setUserId("");
+      setPassword("");
+      navigate('/')
+
+      // Consider redirecting or storing auth token
+    }
+  } catch (error) {
+    console.error('Login failed:', {
+      message: error.message,
+      status: error.response?.status,
+      data: error.response?.data
+    });
+    // setAlert(error.response?.data?.message || "Login failed");
+  }
+};
+
 
   return (
     <div className="flex items-center justify-center h-[80vh] md:h-[90vh]  bg-gray-100">
